@@ -1,8 +1,0 @@
-#!/bin/bash
-MSG="$1"
-
-if ! grep -nE "[*]" "$MSG";then
-cat "$MSG"
-echo "Your massage must cintain the word 'updated'"
-exit 1
-fi
